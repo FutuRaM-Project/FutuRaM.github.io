@@ -1,0 +1,54 @@
+graph TB
+
+subgraph Develop[" "]
+Start --> DefineScope
+DefineScope --> DetermineMethod
+DetermineMethod --> MarkerScenarioMapping
+MarkerScenarioMapping --> IdentifyDrivers
+IdentifyDrivers --> DevelopThemes
+DevelopThemes --> QualNarr
+
+QualitativeDevelopment --> End
+QualNarr --> DefineParameters
+DefineParameters --> QualitativeDevelopment
+
+end
+
+Communicate
+Monitor
+Refinement
+
+
+End -.-> Review
+Review -.-> Communicate
+Review -.-> Monitor
+Communicate -.-> Refinement
+Monitor -.-> Refinement
+Refinement ~~~ End
+Refinement -.-> Develop
+Start{{"BEGIN SCENARIO DEVELOPMENT"}}
+style Start fill:#9e89fdc9,stroke:#FFF
+
+DetermineMethod("Step 2: Determine Methodology")
+DefineScope("Step 1: Define Scope and Objectives")
+MarkerScenarioMapping("Step 3: Marker Scenario Mapping")
+IdentifyDrivers("Step 4: Identify Key Drivers")
+DevelopThemes("Step 5: Develop Storyline Themes")
+DefineParameters("Step 7: Define Scenario Parameters")
+QualNarr("Step 6: Qualitative Narrative Development")
+QualitativeDevelopment("Step 8: Quantitative Modelling")
+Refinement("Step 11. Iterative Refinement")
+Communicate("Communication and Engagement")
+Monitor("Monitoring and Adaptation")
+
+End{{"Step 9. IMPLEMENTATION"}}
+style End fill:#9e89fdda,stroke:#FFF
+
+Review["Step 10: Review and Update"]
+style Review fill:#76e2372a,stroke:#FFF
+style Develop fill:#fcfcfc00,stroke:#9F89FD
+style Refinement fill:#76e2372a,stroke:#FFF
+style Communicate fill:#76e23783,stroke:#FFF
+style Monitor fill:#76e23788,stroke:#FFF
+
+

@@ -2,7 +2,7 @@
     <html>
     <head>
         <meta charset="UTF-8">
-        <title>FutuRaM - Work Package 2</title>
+        <title>&ast;&ast;Work Package 2&ast;&ast;</title>
         <style>
 /* From extension vscode.github */
 /*---------------------------------------------------------------------------------------------
@@ -2619,18 +2619,17 @@ body,
             <div class="github-markdown-content"><span id="markdown-mermaid" aria-hidden="true"
                     data-dark-mode-theme="dark"
                     data-light-mode-theme="default"></span>
-                <!-- <img src="file:////home/stew/code/gh/futuram/WP2/2.1/figures/header.png" alt="Alt text">   -->
-<!-- <p align="center">
-<img src="file:////home/stew/code/gh/futuram/WP2/2.1/figures/header_logo.png" alt="Alt text" width="300" height="150">  
+                <p align="center">
+<img src="file:////home/stew/code/gh/futuram/FutuRaM.github.io/figures/FutuRaM_Baseline_BLACK-EPS.svg" alt="Alt text" width="500" height="300">  
 <br>
-</p> -->
-<h1 id="futuram---work-package-2--">FutuRaM - Work Package 2  <!-- omit in toc --></h1>
+</p>
+<h1 id="work-package-2--"><strong>Work Package 2</strong>  <!-- omit in toc --></h1>
 <h2 id="foresight-for-future-secondary-raw-materials-"><em>Foresight for Future Secondary Raw Materials</em> <!-- omit in toc --></h2>
-<p><img src="file:////home/stew/code/gh/futuram/WP2/2.1/figures/header.png" alt=""></p>
+<hr>
 <h2 id="task-21-future-scenarios-for-secondary-raw-material-recovery-in-the-eu-"><strong>Task 2.1: Future scenarios for secondary raw material recovery in the EU</strong> <!-- omit in toc --></h2>
 <p><strong>Pursuant to milestone 11, the following is a draft report describing the future scenarios for FutuRaM.</strong>
 <br><br>
-Date: 2023-06-12</p>
+Date: 2023-06-01</p>
 <hr>
 <h2 id="i-introduction">I. Introduction</h2>
 <p>The FutuRaM project seeks to quantify the current and future availability of secondary raw materials
@@ -2681,6 +2680,7 @@ The Circularity scenario encapsulates the fullest possible realisation of a circ
 </li>
 <li><a href="#2-methodology">2. Methodology</a>
 <ul>
+<li><a href="#a-conceptual-framework-for-scenario-development-----omit-in-toc">A conceptual framework for scenario development  &lt;!-- omit in toc&gt;</a></li>
 <li><a href="#21-step-1-defining-the-scope-and-objectives">2.1. Step 1: Defining the scope and objectives</a>
 <ul>
 <li><a href="#211-scope-and-objectives-of-the-scenario-development-process">2.1.1. Scope and objectives of the scenario development process</a></li>
@@ -3063,7 +3063,7 @@ See <a href="#62-list-of-terminology">6.2. List of terminology</a> for a complet
 </tbody>
 </table>
 <h2 id="2-methodology">2. Methodology</h2>
-<h3 id="a-conceptual-framework-for-scenario-development--">A conceptual framework for scenario development  <!-- omit in toc --></h3>
+<h3 id="a-conceptual-framework-for-scenario-development-----omit-in-toc">A conceptual framework for scenario development  &lt;!-- omit in toc&gt;</h3>
 <p><a href="#iii-table-of-contents">Back to Table of Contents</a></p>
 <p>The conceptual framework for scenario development is based on the following principles.</p>
 <p>The scenarios should:</p>
@@ -3088,7 +3088,73 @@ See <a href="#62-list-of-terminology">6.2. List of terminology</a> for a complet
 <p>By adhering to these principles, the FutuRaM project aims to develop robust, informative, and policy-relevant scenarios that support sustainable decision-making and contribute to the transition towards a more circular and resource-efficient economy. The methodology ensures that the scenarios capture the complexity and interconnectedness of the waste streams, taking into account various factors such as legislation, technology, geopolitics, and societal values. Ultimately, the goal is to provide decision makers with valuable insights and tools to navigate the challenges and opportunities associated with secondary raw materials in a rapidly changing world.</p>
 <h3 id="scenario-storyline-development-process-">Scenario storyline development process <!-- omit in toc --></h3>
 <p>Building scenarios involves several steps and methodologies, which can vary depending on the specific context and objectives. The following section provides an overview of the scenario development process used in FutuRaM.</p>
-<p><img src="file:////home/stew/code/gh/futuram/WP2/2.1/figures/fig_method.png" alt="Figure 2.1: Scenario storyline development process"></p>
+<h5 id="figure-21-scenario-storyline-development-process-">Figure 2.1: Scenario storyline development process <!-- omit in toc --></h5>
+<pre style="all:unset;"><div class="mermaid">%%{
+init: {
+'theme': 'default',
+'themeVariables': {
+&lt;!-- 'primaryColor': '#29C492',
+'primaryTextColor': '#000',
+&lt;!-- 'primaryBorderColor': '#000567', --&gt;
+&lt;!-- 'lineColor': '#0018F1', --&gt;
+&lt;!-- 'secondaryColor': '#006100',
+'tertiaryColor': '#fff' --&gt; --&gt;
+}
+}
+}%%
+
+graph TB;
+
+subgraph Develop[" "]
+Start --&gt; DefineScope;
+DefineScope --&gt; DetermineMethod;
+DetermineMethod --&gt; MarkerScenarioMapping;
+MarkerScenarioMapping --&gt; IdentifyDrivers;
+IdentifyDrivers --&gt; DevelopThemes;
+DevelopThemes --&gt; QualNarr;
+
+QualitativeDevelopment --&gt; End;
+QualNarr --&gt; DefineParameters;
+DefineParameters --&gt; QualitativeDevelopment;
+
+end
+
+Communicate
+Monitor
+Refinement
+
+
+End -.-&gt; Review;
+Review -.-&gt; Communicate;
+Review -.-&gt; Monitor;
+Communicate -.-&gt; Refinement;
+Monitor -.-&gt; Refinement;
+Refinement ~~~ End;
+Refinement -.-&gt; Develop;
+Start{{"BEGIN SCENARIO DEVELOPMENT"}};
+style Start fill:#9e89fdc9,stroke:#FFF
+
+DetermineMethod("Step 2: Determine Methodology");
+DefineScope("Step 1: Define Scope and Objectives");
+MarkerScenarioMapping("Step 3: Marker Scenario Mapping");
+IdentifyDrivers("Step 4: Identify Key Drivers");
+DevelopThemes("Step 5: Develop Storyline Themes");
+DefineParameters("Step 7: Define Scenario Parameters");
+QualNarr("Step 6: Qualitative Narrative Development");
+QualitativeDevelopment("Step 8: Quantitative Modelling");
+Refinement("Step 11. Iterative Refinement");
+Communicate("Communication and Engagement");
+Monitor("Monitoring and Adaptation");
+
+End{{"Step 9. IMPLEMENTATION"}};
+style End fill:#9e89fdda,stroke:#FFF
+
+Review["Step 10: Review and Update"];
+style Review fill:#76e2372a,stroke:#FFF
+style Develop fill:#fcfcfc00,stroke:#9F89FD
+style Refinement fill:#76e2372a,stroke:#FFF
+style Communicate fill:#76e23783,stroke:#FFF
+style Monitor fill:#76e23788,stroke:#FFF</div></pre>
 <p><br></br></p>
 <h3 id="21-step-1-defining-the-scope-and-objectives">2.1. Step 1: Defining the scope and objectives</h3>
 <p>Back to <a href="#iii-table-of-contents">Table of Contents</a></p>
@@ -3245,7 +3311,7 @@ Clear benchmarks have been set for domestic capacities of the EU in 2030:</p>
 <li><strong>Acceptability</strong>: The methodology should be acceptable to stakeholders, ensuring that it is perceived as fair and legitimate.</li>
 </ul>
 <p>The following table provides an overview of the methods and tools considered, along with a brief description of each and its relevance to the specific context and objectives of the FutuRaM scenario development process.<br>
-<a href="#63-methods-and-tools-considered-in-the-futuram-scenario-development-process">6.3. Methods and tools considered in the FutuRaM scenario development process</a></p>
+<a href="#63-methods-and-tools-considered-in-the-FutuRaM-scenario-development-process">6.3. Methods and tools considered in the FutuRaM scenario development process</a></p>
 <h4 id="212-choice-of-methodology">2.1.2. Choice of methodology</h4>
 <p>The grant proposal for the FutuRaM project outlined that there should be at least three scenarios developed, namely business as usual, recovery and circularity. This remains the case, however, during the scenario development process, additional scenarios, or scenario dimensions, were considered.</p>
 <p><em>Supply chain security:</em>
@@ -3379,26 +3445,91 @@ By conducting a literature study and referencing existing scenarios, the FutuRaM
 <p>The process of identifying key drivers involves a combination of literature review, expert consultations, and stakeholder engagement. It requires a comprehensive analysis of relevant trends, uncertainties, and emerging issues that may affect the waste management system.</p>
 <p>The key drivers identified in this step will be used to develop the storyline themes and scenario parameters in the next step.</p>
 <p>The following diagram illustrates the process of identifying key drivers of change:</p>
-<p><img src="file:////home/stew/code/gh/futuram/WP2/2.1/figures/fig_241.png" alt="Figure 2.4.1: Process of identifying key elements for the storylines and scenarios"></p>
-<br>
+<h5 id="figure-241-process-of-identifying-key-elements-for-the-storylines-and-scenarios-">Figure 2.4.1: Process of identifying key elements for the storylines and scenarios <!-- omit in toc --></h5>
+<pre style="all:unset;"><div class="mermaid">%%{
+init: {
+'theme': 'default',
+'themeVariables': {
+
+}
+}
+}%%
+
+flowchart
+
+Qual((Qualitative\nScenarios))
+Quant((Quantitative\nScenarios))
+
+IntEx((WS\nExperts ))
+S((Scenario\nTeam))
+
+Prelim([Preliminary\nCollection])
+Screening([Screening])
+Assess([Assessment])
+Categorise([Categorisation])
+
+Internal([Internal:\nFactors])
+External([External:\nDrivers])
+Outside([Outside:\nInfluences])
+
+ExEx((External\nExperts))
+IntE((Internal\nExperts))
+
+subgraph Selection [Identification and assessment of key drivers of change]
+Prelim
+Screening
+Assess
+Categorise
+end
+
+Prelim --&gt; Screening
+Screening --&gt; Assess
+Assess --&gt; Categorise
+
+subgraph Drivers [Set of scenario and storyline components]
+direction TB
+Internal
+External
+Outside
+
+end
+Selection --&gt; Drivers
+Drivers --&gt; Qual
+Qual -.-&gt; Quant
+
+subgraph Input [Initial input]
+
+IntEx
+S
+end
+Input -.-&gt; Selection
+
+subgraph Review [Review Process]
+ExEx
+IntE
+end
+
+Review -.-&gt; Drivers
+Qual -.-&gt; Review</div></pre>
+<p><br></br></p>
 <p><strong>Methodology and results of this stage for FutuRaMs scenario development:</strong>
 The overall goal of this process is to identify and include elements in the storylines and scenarios that are relevant, plausible, and influential in shaping the future. The selection, screening, and categorization steps ensure that the elements chosen for the development of storylines and scenarios are consistent, coherent, and aligned with the objectives and scope of the scenario exercise.</p>
 <ol>
 <li>
 <p><strong>Preliminary collection:</strong>
-This step involved gathering a pool of potential elements that could be included in the storylines and scenarios. These elements were derived from expert input from waste streams and the scenario development team including taking also knowledge from the literature review and existing scenarios identified in &quot;Step 2 - Marker scenario mapping&quot;.<br>
+This step involved gathering a pool of potential elements that could be included in the storylines and scenarios. These elements were derived from expert input from waste streams and the scenario development team including taking also knowledge from the literature review and existing scenarios identified in &quot;Step 2 - Marker scenario mapping&quot;.
 <br><br>
 This step was conducted using the <a href="https://pestleanalysis.com/pestel-framework/">PESTLE analysis framework</a>
-The PESTEL (or PESTLE) framework is a strategic tool used to understand the macro-environmental factors that affect an system. A PESTEL analysis can help identify opportunities and threats linked to each of these factors, understand the broader context and shape scenarios accordingly.<br>
+The PESTEL (or PESTLE) framework is a strategic tool used to understand the macro-environmental factors that affect an system. A PESTEL analysis can help identify opportunities and threats linked to each of these factors, understand the broader context and shape scenarios accordingly.
 <br><br>
-The acronym PESTEL stands for:<br>
+The acronym PESTEL stands for:
 <br>
-• <strong>Political</strong>: These factors refer to the impact of government policies, regulations, and political stability. This includes issues like tax policy, labour laws, environmental regulations, trade restrictions and reforms, tariffs, and political stability.</p>
-<p>• <strong>Economic</strong>: These factors relate to the broader economic environment, including factors like economic growth, exchange rates, inflation rates, interest rates, disposable income of consumers and businesses, and the general health of the economy.</p>
-<p>• <strong>Sociocultural</strong>: These factors include societal trends and characteristics that could affect your business. They include demographic trends (like age, gender, and ethnicity), cultural trends, lifestyle preferences, consumer attitudes, and broader societal expectations.</p>
-<p>• <strong>Technological</strong>: These factors refer to the impact of emerging technologies, research and development activities, automation, the rate of technological change, and the adoption of technology within your market.</p>
-<p>• <strong>Environmental</strong>: These factors refer to ecological aspects that can affect a system. This includes environmental regulations, consumer attitudes towards sustainability, climate change, and other natural events.</p>
-<p>• <strong>Legal</strong>: These factors include laws and regulations with which your business must comply. These can include labour law, consumer law, health and safety law, and restrictions on the import or export of goods.</p>
+• <strong>Political</strong>: These factors refer to the impact of government policies, regulations, and political stability. This includes issues like tax policy, labour laws, environmental regulations, trade restrictions and reforms, tariffs, and political stability.<br>
+• <strong>Economic</strong>: These factors relate to the broader economic environment, including factors like economic growth, exchange rates, inflation rates, interest rates, disposable income of consumers and businesses, and the general health of the economy.<br>
+• <strong>Sociocultural</strong>: These factors include societal trends and characteristics that could affect your business. They include demographic trends (like age, gender, and ethnicity), cultural trends, lifestyle preferences, consumer attitudes, and broader societal expectations.<br>
+• <strong>Technological</strong>: These factors refer to the impact of emerging technologies, research and development activities, automation, the rate of technological change, and the adoption of technology within your market.<br>
+• <strong>Environmental</strong>: These factors refer to ecological aspects that can affect a system. This includes environmental regulations, consumer attitudes towards sustainability, climate change, and other natural events.<br>
+• <strong>Legal</strong>: These factors include laws and regulations with which your business must comply. These can include labour law, consumer law, health and safety law, and restrictions on the import or export of goods.</p>
 <p>The number of elements at this stage was: 68<br>
 The following table lists the elements that were identified in this stage.<br>
 <a href="#65-list-of-driversfactors-identified-in-the-initial-collection-phase">6.5. List of drivers/factors identified in the initial collection phase</a><br>
@@ -3413,44 +3544,51 @@ In the screening step, the collected elements are evaluated and assessed based o
 The following table lists the elements that were identified in this stage.<br>
 <a href="#66-list-of-driversfactors-identified-in-the-screening-phase">6.6. List of drivers/factors identified in the screening phase</a></p>
 <p>The following figure illustrates part of the screening process for the FutuRaM scenarios which was informed by the waste streams. In this exercise, the elements were evaluated based on their relevance to the waste streams and their potential impact on the waste management system. The elements were also assessed based on their plausibility and likelihood of occurrence in the future. The elements that were deemed relevant, plausible, and influential were included in the storylines and scenarios.</p>
-<p><img src="file:////home/stew/code/gh/futuram/WP2/2.1/figures/figure211_screeningprocess.png" alt="Figure 2.4.2: Part of the screening process for elements to be included in the FutuRaM scenarios "></p>
+<h5 id="figure-242-part-of-the-screening-process-for-elements-to-be-included-in-the-futuram-scenarios-">Figure 2.4.2: Part of the screening process for elements to be included in the FutuRaM scenarios <!-- omit in toc --></h5>
+<p><img src="file:////home/stew/code/gh/futuram/FutuRaM.github.io/figures/figure211_screeningprocess.png" alt="Figure 2.4.2"></p>
 <p><br><br></p>
+<ol>
+<li>
 <p><strong>Assessment</strong><br>
 Once the screening process was complete, the remaining elements were aggregated and categorised based on their thematic relevance or characteristics. This categorisation helps organize the elements into meaningful groups or themes that align with the objectives and scope of the scenarios.
 <br><br>
-The number of elements at this stage was: 21<br>
+The number of elements at this stage was: 21
 <br><br></p>
+</li>
+<li>
 <p><strong>Categorisation</strong><br>
-The scenario elements were then assessed based on their potential impact on the waste management system. For each element, an assessment was made as to whether is was within the scope of FutuRaM to include them as variables in the models, and therefore also the scenarios and their storylines. Those deemed to be within the scope are 'internal' and will be intensively researched and modelled. Those deemed to be outside the scope are 'external' and will be included in the storylines, will vary over time, but will not vary across the three scenarios. Those deemed to be outside the scope and also outside the influence of the waste management system are 'outside' and will not be included in the storylines or scenarios.</p>
-<p><br></br></p>
-<p><strong>Justification for keeping elements outside of the scenario models:</strong><br>
+The scenario elements were then assessed based on their potential impact on the waste management system. For each element, an assessment was made as to whether is was within the scope of FutuRaM to include them as variables in the models, and therefore also the scenarios and their storylines. Those deemed to be within the scope are 'internal' and will be intensively researched and modelled. Those deemed to be outside the scope are 'external' and will be included in the storylines, will vary over time, but will not vary across the three scenarios. Those deemed to be outside the scope and also outside the influence of the waste management system are 'outside' and will not be included in the storylines or scenarios.
+<br></br>
+<strong>Justification for keeping elements outside of the scenario models:</strong>
 The purpose of the FutuRaM project is not to provide all-encompassing scenarios that attempt to capture every possible future development. Such scenarios are inherently inaccurate and can give a false sense of certainty to the model's outcomes. Instead, the focus of FutuRaM is specifically on the Sustainable Resource Management (SRM) system and its implications for the future. Therefore, the scenarios developed within FutuRaM should selectively incorporate elements that have a direct impact on the SRM system.
 <br></br>
 Furthermore, the scenarios should prioritize elements that can be considered as &quot;policy knobs,&quot; meaning variables or factors that can be adjusted or controlled to test different settings. By including these policy knobs, the scenarios can explore the effects of different policy decisions or interventions on the SRM system's outcomes. This targeted approach ensures that the scenarios generated are relevant to the project's objectives and facilitate meaningful analysis.
 <br></br>
-It is crucial to avoid excessive complexity and convolution in scenario modelling. When there are too many convoluted elements included, the results of the modelling exercise can become, at best, difficult to understand and interpret. At worst, the outcomes may become practically useless due to the overwhelming interactions and uncertainties introduced by the complex elements. Therefore, careful consideration is necessary to strike a balance between incorporating essential factors and maintaining the clarity and usefulness of the scenario modelling results.<br>
-<br><br></p>
-<p><strong>Examples:</strong></p>
-<p>These elements are kept outside of the model due to considerations of reliability, predictability, and complexity. Including such elements within the model may introduce excessive uncertainty and make the model less reliable and predictable.<br>
+It is crucial to avoid excessive complexity and convolution in scenario modelling. When there are too many convoluted elements included, the results of the modelling exercise can become, at best, difficult to understand and interpret. At worst, the outcomes may become practically useless due to the overwhelming interactions and uncertainties introduced by the complex elements. Therefore, careful consideration is necessary to strike a balance between incorporating essential factors and maintaining the clarity and usefulness of the scenario modelling results.
+<br><br>
+<strong>Examples:</strong></p>
+<p>These elements are kept outside of the model due to considerations of reliability, predictability, and complexity. Including such elements within the model may introduce excessive uncertainty and make the model less reliable and predictable.
 <br></br>
 <em>Resource shortages:</em><br>
-Resource shortages can be highly unpredictable and subject to various external factors such as geopolitical events, natural disasters, or technological advancements. The precise timing and extent of resource shortages are challenging to forecast accurately, making it difficult to include them within the model without introducing significant uncertainty.<br>
+Resource shortages can be highly unpredictable and subject to various external factors such as geopolitical events, natural disasters, or technological advancements. The precise timing and extent of resource shortages are challenging to forecast accurately, making it difficult to include them within the model without introducing significant uncertainty.
 <br></br>
 <em>Raw material vs SRM prices:</em><br>
-The dynamics and competition between raw materials and secondary raw materials can be complex and influenced by various market factors, technological advancements, and policy changes. These factors make it challenging to predict and model the specific price trends accurately, leading to increased uncertainty within the model.<br>
+The dynamics and competition between raw materials and secondary raw materials can be complex and influenced by various market factors, technological advancements, and policy changes. These factors make it challenging to predict and model the specific price trends accurately, leading to increased uncertainty within the model.
 <br></br>
 <em>Climate change impacts/mitigation:</em><br>
-Climate change impacts and mitigation efforts involve a wide range of factors and uncertainties, including scientific projections, global cooperation, policy changes, and technological advancements. The complex interplay of these factors makes it difficult to model and predict the precise impacts and outcomes within a specific time frame.<br>
+Climate change impacts and mitigation efforts involve a wide range of factors and uncertainties, including scientific projections, global cooperation, policy changes, and technological advancements. The complex interplay of these factors makes it difficult to model and predict the precise impacts and outcomes within a specific time frame.
 <br></br>
 <em>International trade and cooperation (vs. autarky):</em><br>
-International trade and cooperation are influenced by multiple geopolitical, economic, and policy factors. The dynamics of trade relationships, agreements, and collaborations can change rapidly, making it challenging to model and predict their outcomes reliably. Moreover, the decision-making and actions of multiple countries and stakeholders involved in international trade introduce convolution and complexity that is difficult to capture within the model.<br>
+International trade and cooperation are influenced by multiple geopolitical, economic, and policy factors. The dynamics of trade relationships, agreements, and collaborations can change rapidly, making it challenging to model and predict their outcomes reliably. Moreover, the decision-making and actions of multiple countries and stakeholders involved in international trade introduce convolution and complexity that is difficult to capture within the model.
 <br></br>
-By keeping these elements outside of the model, it allows for a more reliable and predictable representation of the scenarios, focusing on factors that can be modelled with greater certainty and understanding.<br>
+By keeping these elements outside of the model, it allows for a more reliable and predictable representation of the scenarios, focusing on factors that can be modelled with greater certainty and understanding.
 <br></br>
 The number of INTERNAL elements identified as at this stage was: 12<br>
 The number of EXTERNAL elements identified as at this stage was: 9<br>
 <br>
 The following table lists the elements that were identified in this stage. The numeric rating in the columns &quot;BAU&quot;, &quot;REC&quot; and &quot;CIR&quot; refer to estimates of the trends of the elements under each scenario.</p>
+</li>
+</ol>
 <h6 id="table-24-elements-identified-in-the-assessment-and-categorisation-step-">Table 2.4: Elements identified in the assessment and categorisation step <!-- omit in toc --></h6>
 <table>
 <thead>
@@ -3664,7 +3802,7 @@ The following table lists the elements that were identified in this stage. The n
 <p>The scenario storylines will be described in detail in the next section. This step involved taking the themes defined by the charter and the elements identified in the previous steps and working with the internal waste stream groups to develop qualitative estimates about how each of these elements (at their different levels) may have an impact on the the amounts and composition of the SRM flows in their purview.</p>
 <h3 id="27-step-7-definition-of-scenario-parameters">2.7. Step 7: Definition of scenario parameters</h3>
 <p>Back to <a href="#iii-table-of-contents">Table of Contents</a></p>
-<p>The scenario parameters are the set of quantitative values or functions that will be used to define the scenario inputs for the model. These parameters will be defined in the next stages of the project.</p>
+<p>The scenario parameters are the quantitative values that will be used to define the scenario inputs for the model. These parameters will be defined in the next stages of the project.</p>
 <h3 id="28-step-8-quantitative-modelling">2.8. Step 8: Quantitative modelling</h3>
 <p>Back to <a href="#iii-table-of-contents">Table of Contents</a></p>
 <p>The scenario quantification will be performed in the next stages of the project.</p>
@@ -3714,26 +3852,15 @@ The following table lists the elements that were identified in this stage. The n
 <li>Collection systems for battery waste remain sporadic and unstandardised.</li>
 <li>Little collaboration between industry and government in the field of battery recovery.</li>
 <li>Primary extraction remains the dominant source for battery materials.</li>
-<li>Share of LIB will increase (EV, LMT, Industrial LIB uptake)</li>
-<li>LIB Battery Chemistries will change</li>
-<li>No big changes for EEE-BATT and Portable-BATT</li>
-<li>Use of critical resources continue but are already decreasing (BATT chemistry already changing towards less CRM content)</li>
-<li>Large scale reuse of batteries is minimal</li>
-<li>Collection rates do not fulfil the EU targets</li>
-<li>Recycling efficiencies do not fulfil the EU targets</li>
-<li>Recovery rates do not fulfil the EU targets</li>
 </ul>
 <h5 id="elv-end-of-life-vehicles-">ELV (End-of-Life Vehicles) <!-- omit in toc --></h5>
 <p>The BAU scenario maintains the current approach to end-of-life vehicles, with minimal improvements in the recovery and recycling process. The absence of effective technologies and regulatory incentives results in low recovery rates of valuable materials from ELVs.</p>
 <ul>
-<li>Legislation banning new ICEVs from 2035</li>
 <li>Current recovery technologies are unable to significantly improve the extraction of valuable materials from ELVs.</li>
 <li>Consumer demand continues to drive high production of new vehicles.</li>
 <li>ELV collection systems remain uncoordinated and inefficient.</li>
 <li>Minimal collaboration between government and industry for ELV recovery.</li>
 <li>A significant proportion of vehicle components continue to end up as waste.</li>
-<li>Gradual and slow improvement of recycling chain technology efficiency</li>
-<li>No new legislation to improve recovery and support circular strategies in comparison to 2023</li>
 </ul>
 <h5 id="weee-waste-electrical-and-electronic-equipment-">WEEE (Waste Electrical and Electronic Equipment) <!-- omit in toc --></h5>
 <p>In the BAU scenario, the treatment of Waste Electrical and Electronic Equipment (WEEE) does not significantly change. The lack of technological progress and effective regulation results in low recovery rates of valuable materials from WEEE.</p>
@@ -3743,15 +3870,11 @@ The following table lists the elements that were identified in this stage. The n
 <li>Inefficient collection systems result in significant amounts of WEEE ending up in landfills.</li>
 <li>Little collaboration between government and industry for WEEE recovery.</li>
 <li>The majority of WEEE continues to be treated as waste, with low recycling rates.</li>
-<li>No ground breaking technologies and practices to improve recovery and circularity.</li>
-<li>Reuse of products and components is not widely utilised</li>
-<li>Changes in legislation (e.g. circular economy and product design targets, targets for collection and recycling) are not strictly implemented.</li>
-<li>The BAU and the Recovery scenarios are similar from the put-on-market perspective (e.g. production and consumption remain the same), but it’s the recovery stage that makes the difference.</li>
 </ul>
 <h5 id="min-mining-waste-">MIN (Mining waste) <!-- omit in toc --></h5>
 <p>The BAU scenario sees the continuation of current practices in mining waste management. The absence of advanced recovery technologies and regulatory incentives leads to low recovery rates of valuable materials from mining waste.</p>
 <ul>
-<li>Limited technological advancements lead to static recovery rates of valuable materials from mining waste.</li>
+<li>Limited technological advancements lead to low recovery rates of valuable materials from mining waste.</li>
 <li>Continued reliance on primary extraction as the dominant source of raw materials.</li>
 <li>Minimal collaboration between government and industry for mining waste recovery.</li>
 <li>Low levels of traceability and management of mining waste.</li>
@@ -3765,20 +3888,10 @@ The following table lists the elements that were identified in this stage. The n
 <li>Inefficient collection systems result in significant amounts of CDW ending up in landfills.</li>
 <li>Minimal collaboration between government and industry for CDW recovery.</li>
 <li>The majority of CDW continues to be treated as waste, with low recycling rates.</li>
-<li>Plausible target: 70% recovery rate of CDW by 2050.</li>
-<li>Example of treatment technological development: waste concrete is primarily down-cycled as backfill via stationary crushing processes.</li>
 </ul>
 <h5 id="slash-slags-and-ashes-">SLASH (Slags and Ashes) <!-- omit in toc --></h5>
 <p>In the BAU scenario, slags and ashes (SLASH) continue to be treated as waste. The absence of recovery technologies and regulatory incentives leads to low recovery rates of valuable materials from SLASH.</p>
 <ul>
-<li>Increased generation of SLASH because SRMs are not recovered and end up in incineration and smelter residues.</li>
-<li>Low quality of SLASH due to:
-<ul>
-<li>poor sorting and separation of waste streams</li>
-<li>high contamination</li>
-<li>large proportion coming from mixed waste incineration</li>
-</ul>
-</li>
 <li>Lack of technological advancements result in low recovery rates of valuable materials from SLASH.</li>
 <li>Continued high generation of SLASH due to the reliance on traditional energy sources.</li>
 <li>Minimal incentives for the recovery and reuse of materials from SLASH.</li>
@@ -3817,80 +3930,15 @@ The following table lists the elements that were identified in this stage. The n
 <li>Standardised collection systems enhance the quantity and quality of battery waste available for recovery.</li>
 <li>Industry and government collaboration leads to investments in research and development of battery recovery technologies.</li>
 <li>Despite progress in battery design and recycling, primary extraction remains a significant source for battery materials.</li>
-<li>Battery passport will have a strong impact on collection, material recovery rates and recycling rates.</li>
-<li>Collection
-<ul>
-<li>Portable batteries collection increase according to the WEEE-WS</li>
-<li>Improved collection of LMT</li>
-<li>Improved regulation and collection of Industrial batteries</li>
-</ul>
-</li>
-<li>Material recovery
-<ul>
-<li>Improved recycling technologies</li>
-<li>Battery Pass will improve material recovery</li>
-<li>Higher recovery rate for lithium</li>
-<li>Increase in recycling by average weight</li>
-<li>Recycling of plastics</li>
-</ul>
-</li>
-<li>Ambitious goals of recycling/recovery rates compete with re-use, so re-use remains low.</li>
-<li>Improved public awareness means that fewer batteries end up in the municipal waste stream and there is less hoarding.</li>
-<li>Design for recycling (DFR):
-<ul>
-<li>Material and composition selection for recycling.</li>
-<li>Higher requirements on disassemblability.</li>
-<li>Information available to promote efficient recovery.</li>
-</ul>
-</li>
 </ul>
 <h5 id="elv-end-of-life-vehicles--1">ELV (End-of-Life Vehicles) <!-- omit in toc --></h5>
 <p>The recovery scenario envisions a more effective and technology-driven end-of-life vehicle treatment process. Advancements in recovery technologies allow for an improved extraction of valuable materials from vehicles at their end of life, although consumerism still drives high demand for new vehicles.</p>
 <ul>
-<li>
-<p>Innovations in recovery technologies allow for a higher recovery rate of valuable materials from ELVs.</p>
-</li>
-<li>
-<p>Despite advancements in vehicle design, the total number of vehicles produced remains high due to consumer demand.</p>
-</li>
-<li>
-<p>Improved systems for ELV collection are established, ensuring efficient management of ELV waste.</p>
-</li>
-<li>
-<p>Increased collaboration between the government and industry leads to investments in ELV recovery technologies.</p>
-</li>
-<li>
-<p>The focus on recovery still means a significant amount of vehicle components end up as waste.</p>
-</li>
-<li>
-<p>Focus on managing end-of-life of vehicles</p>
-</li>
-<li>
-<p>Prioritise increased recovery of secondary materials</p>
-</li>
-<li>
-<p>EU recovery targets are reached (currently implemented/proposed targets, but also increased and new targets)</p>
-</li>
-<li>
-<p>Common/bulk materials (Fe, Non-Fe, plastics etc.,) and precious metals (Au, Ag, Pd, Pt) reach high mass recycling rates and high element recycling rates. Other CRMs currently not recovered reach a moderate level of recovery.</p>
-</li>
-<li>
-<p>For instance,</p>
-<ul>
-<li>More advanced dismantling and processing steps (e.g., components and materials)</li>
-<li>More specialised recovery of certain components and materials (e.g., electric motors including permanent magnets and embedded REE)</li>
-<li>More public and private interest in developing recycling chains</li>
-<li>Increase in collection rate due to increase in participation from public and businesses, i.e., target-based incentives with strong regulations and monitoring</li>
-</ul>
-</li>
-<li>
-<p>Design for recycling (DFR):</p>
-<ul>
-<li>Material and composition selection.</li>
-<li>Higher requirements on disassemblability.</li>
-<li>Information available to enable recovery.</li>
-</ul>
-</li>
+<li>Innovations in recovery technologies allow for a higher recovery rate of valuable materials from ELVs.</li>
+<li>Despite advancements in vehicle design, the total number of vehicles produced remains high due to consumer demand.</li>
+<li>Improved systems for ELV collection are established, ensuring efficient management of ELV waste.</li>
+<li>Increased collaboration between the government and industry leads to investments in ELV recovery technologies.</li>
+<li>The focus on recovery still means a significant amount of vehicle components end up as waste.</li>
 </ul>
 <h5 id="weee-waste-electrical-and-electronic-equipment--1">WEEE (Waste Electrical and Electronic Equipment) <!-- omit in toc --></h5>
 <p>Under the recovery scenario, Waste Electrical and Electronic Equipment (WEEE) becomes a significant resource for secondary raw materials. Technological advancements in the sector improve the efficiency of WEEE treatment, although the consumerism-driven demand for new electronics remains high.</p>
@@ -3900,21 +3948,6 @@ The following table lists the elements that were identified in this stage. The n
 <li>Standardised collection systems for WEEE are implemented, improving the supply of materials for recovery.</li>
 <li>Increased industry-government collaboration leads to further development in WEEE recovery technologies.</li>
 <li>Consumer behaviour remains a significant hurdle for more efficient WEEE management.</li>
-<li>Higher recycling rate – make full use of the disposed parts. For instance:
-<ul>
-<li>more automatisation of the dismantling and processing steps (e.g., AI)</li>
-<li>recycling technologies improvements (e.g. small components recovery is also happening)</li>
-<li>more functional collection infrastructure</li>
-<li>financial support provided to recyclers/operators</li>
-<li>bans on WEEE exports push for increased domestic recycling</li>
-</ul>
-</li>
-<li>SRM/CRM recovery targets introduction – linked to production phase requirements (e.g. x% of SRM used in place of virgin ones).</li>
-<li>“Design for recovery” principle – Ecodesign mandates changes in weight and composition of EEE so complexity and the type of materials used</li>
-<li>Higher public awareness and participation on WEEE issue and management.</li>
-<li>Higher compliance from the public, the producers and the businesses.</li>
-<li>Strong regulations and monitoring are in place with higher collection and recycling targets which are set and implemented and fines are set to  those who fail to achieve the targets.</li>
-<li>Focus given more to the EoL management of WEEE.</li>
 </ul>
 <h5 id="min-mining-waste--1">MIN (Mining waste) <!-- omit in toc --></h5>
 <p>Under the recovery scenario, technological advancements enable the extraction of residual valuable materials from mining waste, transforming it into a valuable resource. However, the continued reliance on primary mining due to consumer demand generates significant amounts of mining waste.</p>
@@ -3933,16 +3966,6 @@ The following table lists the elements that were identified in this stage. The n
 <li>Standardised collection systems for CDW enhance the efficiency of waste management.</li>
 <li>Increased collaboration between government and industry leads to investments in CDW recovery technologies.</li>
 <li>The recovery focus still means a significant proportion of construction materials end up as waste.</li>
-<li>Eliminating the disposal of any avoidable CDW, through the implementation and expansion of incentives, and regulatory measures.</li>
-<li>The focus of this scenario is to significantly reduce the amount of CDW that ends up treatment plants without any useful applications, e.g., landfilling, incineration, and land spreading.</li>
-<li>This scenario is characterized by high recovery rate, achieved via:
-<ul>
-<li>increased investment and enhanced regulatory system in waste management</li>
-<li>leading to more waste recovery infrastructure</li>
-<li>widespread application of selection demolition and on-site waste sorting</li>
-<li>the implementation of waste-to-energy facilities.</li>
-</ul>
-</li>
 </ul>
 <h5 id="slash-slags-and-ashes--1">SLASH (Slags and Ashes) <!-- omit in toc --></h5>
 <p>In the recovery scenario, slags and ashes (SLASH) are recognised as a potential resource for secondary raw materials. Advances in recovery technologies enable the extraction of valuable metals from SLASH. However, the total volume of SLASH generated remains significant due to the continued reliance on traditional energy sources.</p>
@@ -3952,13 +3975,6 @@ The following table lists the elements that were identified in this stage. The n
 <li>New regulations incentivise the recovery and reuse of materials from SLASH.</li>
 <li>Digital solutions enhance the traceability and management of SLASH.</li>
 <li>SLASH remains a significant environmental challenge due to the volume generated.</li>
-<li>Transferring down-cycling to recycling or even upcycling.</li>
-<li>Recycling technology improvements (e.g., cement additives using biomass ash is under investigation)</li>
-<li>More functional collection infrastructure.</li>
-<li>Financial support provided to recyclers/operators.</li>
-<li>Introduction of SRM/CRM recovery targets. For example, recovery of P from biomass ash for fertilizer. Recovery of Zn and Pb from Zn and Pb smelter slag.</li>
-<li>Higher awareness and participation of relevant sectors on SLASH issue and management.</li>
-<li>Strong regulations and monitoring are in place with higher collection and recycling targets.</li>
 </ul>
 <h3 id="33-scenario-3-circularity">3.3. Scenario 3: Circularity</h3>
 <p><a href="#iii-table-of-contents">Back to: <strong>Table of Contents</strong></a></p>
@@ -3979,71 +3995,15 @@ The following table lists the elements that were identified in this stage. The n
 <li>Standardised collection systems for battery waste are established, improving the efficiency of the recycling process.</li>
 <li>Service-based business models like leasing ensure manufacturers retain ownership of the batteries, promoting circularity.</li>
 <li>Greater transparency through digital product passports aids in effective battery waste management.</li>
-<li>Battery passport and publicly accessible Information from new Battery Regulation (SoH, SoC, Predicted lifetime/warranty, etc.) given by the economic operator that places the battery on the market enables high re-use rates.</li>
-<li>Increased repairability/modularity.</li>
-<li>Reduced demand from ‘sharing economy’ and more ‘sustainable’ transport choices.</li>
-<li>New emerging technologies more suited for reuse/repair.</li>
-<li>Ambitious targets set by business and public policy.</li>
 </ul>
 <h5 id="elv-end-of-life-vehicles--2">ELV (End-of-Life Vehicles) <!-- omit in toc --></h5>
 <p>For End-of-Life Vehicles (ELVs), the circular economy model revolutionises the way vehicles are designed, used, and discarded. Emphasising extended vehicle life through repair and remanufacturing, this scenario also optimises the recovery of materials from vehicles at the end of their life.</p>
 <ul>
-<li>
-<p>Vehicle design shifts towards repairability, upgradability, and recyclability, increasing the lifespan of vehicles.</p>
-</li>
-<li>
-<p>Standardised systems for ELV collection are established, ensuring efficient waste management.</p>
-</li>
-<li>
-<p>Innovative technologies enable higher recovery rates of metals and other valuable materials from ELVs.</p>
-</li>
-<li>
-<p>Service-based models like vehicle leasing and sharing reduce the total number of vehicles produced.</p>
-</li>
-<li>
-<p>Digital product passports provide information about vehicle components, aiding in effective recycling or reuse.</p>
-</li>
-<li>
-<p>Focus on managing use-phase of vehicles.</p>
-</li>
-<li>
-<p>Circular strategies take place before material recovery so that material recovery is “delayed”.</p>
-</li>
-<li>
-<p>Information available to enable these strategies.</p>
-</li>
-<li>
-<p>Three main types of circular strategies can be considered, but it is not specified now whether they complement or replace each other.</p>
-<ul>
-<li>Light-weighting</li>
-<li>Downsizing: Increase in share of smaller car</li>
-<li>Decrease weight: Material substitution with lighter materials (e.g. high strength steel, aluminum, plastic, carbon fibre, titanium, primary emphasis on vehicle’s body and chassis).</li>
-<li>Decrease weight: Decrease material content per vehicles</li>
-</ul>
-</li>
-<li>
-<p>Ambitious targets set by business and public policy.</p>
-</li>
-<li>
-<p>Remanufacturing/Repair/Reuse.</p>
-<ul>
-<li>Increase in average lifetime: Due to an increase in durability.</li>
-<li>Increase in average lifetime: Due to an increase in the availability of repair components.</li>
-<li>Increase in average lifetime: Better after-service.</li>
-<li>Modular and common design: Leads to an increase in the availability of repair components in the second-hand market.</li>
-<li>Ambitious targets set by business and public policy.</li>
-</ul>
-</li>
-<li>
-<p>More intense use.</p>
-<ul>
-<li>Increase in average occupancy and average vehicle-kilometres per trip.</li>
-<li>Decrease in average lifetime (in terms of years): As the utilisation factor increases.</li>
-</ul>
-</li>
-<li>
-<p>Increase in circular strategies due to an increase in participation from the public and businesses, i.e., target-based incentives with strong regulations and monitoring.</p>
-</li>
+<li>Vehicle design shifts towards repairability, upgradability, and recyclability, increasing the lifespan of vehicles.</li>
+<li>Standardised systems for ELV collection are established, ensuring efficient waste management.</li>
+<li>Innovative technologies enable higher recovery rates of metals and other valuable materials from ELVs.</li>
+<li>Service-based models like vehicle leasing and sharing reduce the total number of vehicles produced.</li>
+<li>Digital product passports provide information about vehicle components, aiding in effective recycling or reuse.</li>
 </ul>
 <h5 id="weee-waste-electrical-and-electronic-equipment--2">WEEE (Waste Electrical and Electronic Equipment) <!-- omit in toc --></h5>
 <p>In the circularity scenario, Waste Electrical and Electronic Equipment (WEEE) becomes a valuable resource instead of a disposal challenge. Thanks to product design changes and the application of advanced recovery technologies, a significant percentage of the materials in WEEE is reclaimed and fed back into the production cycle.</p>
@@ -4053,19 +4013,9 @@ The following table lists the elements that were identified in this stage. The n
 <li>Collection systems for WEEE are improved, ensuring a steady supply of materials for recycling.</li>
 <li>Digitalisation and data use enhance traceability and efficiency in WEEE management.</li>
 <li>Service-based models for electronics promote the use of products as a service rather than ownership, reducing WEEE generation.</li>
-<li>Increased durability and lifespans.</li>
-<li>Increased repairability.</li>
-<li>More sharing and product-service systems, corresponding to a reduction in the lifetime (for some equipment).</li>
-<li>More reuse practices (expanded second-hand market).</li>
-<li>Less hoarding.</li>
-<li>Higher formal collection and recycling rate.</li>
-<li>Focus given more to the production and use phase rather than the EoL (End-of-Life).</li>
-<li>&quot;Design for circularity&quot; principle: Ecodesign mandates repairability, durability, no obsolescence, modularity, software upgrades possible, and diverse brands that use the same charger (e.g., Apple).</li>
-<li>Strong regulations and monitoring are in place with higher reuse and circular targets, which are set and implemented, and fines are imposed on the Member States (MS) that fail to achieve the targets.</li>
-<li>Support and development of circular strategies infrastructure (e.g., easy information access for repairability, repairing shops, accessibility to spare components on the market, etc.).</li>
 </ul>
 <h5 id="min-mining-waste--2">MIN (Mining waste) <!-- omit in toc --></h5>
-<p>In this scenario, the impact on mining waste is two-fold. Firstly, the need for primary mining is reduced due to efficient resource use and high recovery rates of materials. Secondly, mining waste itself is treated as a valuable resource, with advanced technologies being used to extract residual valuable materials.</p>
+<p>In this scenario, the impact on mining waste is two-fold. Firstly, the need for primary mining is drastically reduced due to efficient resource use and high recovery rates of materials. Secondly, mining waste itself is treated as a valuable resource, with advanced technologies being used to extract residual valuable materials.</p>
 <ul>
 <li>Decrease in primary mining reduces the generation of mining waste.</li>
 <li>Advanced technologies are employed to extract valuable materials from mining waste.</li>
@@ -4081,13 +4031,6 @@ The following table lists the elements that were identified in this stage. The n
 <li>Policies and regulations incentivise the use of recycled materials in construction.</li>
 <li>Standardised systems for CDW collection and separation are established.</li>
 <li>Digital tools like building information modelling (BIM) improve resource management in construction.</li>
-<li>This scenario envisions a almost closed-loop system where CDW is considered a resource, with an emphasis on minimising waste generation and maximising resource efficiency in recovery.</li>
-<li>Waste reduction is prioritized through the implementation of eco-designs, including designing out waste (DOW), lightweight design (LWD), and design for dismantling (DFD).</li>
-<li>Reuse and repair standards and networks are established to boost the reuse of end-of-life building components and equipment.</li>
-<li>If reuse is no longer possible, waste is recycled through high-efficiency recycling facilities rather than down-cycled or used for energy recovery.</li>
-<li>This scenario is characterized by meeting all material needs through recovery (including mineral wastes from other industries) with high material efficiency achieved through the development of new business models, advanced designs and recycling technologies, strict waste management regulations, and innovative products and services.</li>
-<li>Plausible target: Achieving a 100% recovery rate of avoidable CDW by 2050, with a recycling rate accounting for 30% and component reuse accounting for 20%. Raw material consumption should be reduced by 50% compared to the 2020 level.</li>
-<li>Example of treatment technological development: Waste concrete is primarily recycled through an innovative mobile dry process. Biodiesel-based thermal treatment is applied to further pyrolyze the fine aggregate to recover cement. Lightweight design is implemented to reduce concrete use.</li>
 </ul>
 <h5 id="slash-slags-and-ashes--2">SLASH (Slags and Ashes) <!-- omit in toc --></h5>
 <p>In the circularity scenario, the approach to slags and ashes (SLASH) dramatically changes. Instead of being treated as waste, SLASH is seen as a valuable secondary raw material. Advances in technology allow for the extraction of valuable metals and minerals from SLASH, which then re-enter the material cycle.</p>
@@ -4097,40 +4040,20 @@ The following table lists the elements that were identified in this stage. The n
 <li>New regulations incentivise the use of SLASH in various applications, such as in the construction industry.</li>
 <li>Digital solutions enhance the tracking and management of SLASH.</li>
 <li>Collaboration between industries utilises SLASH in new and innovative ways.</li>
-<li>Reduce the generation of SLASH by increasing the efficiency of the manufacturing side. For example, developing higher efficient production of metals and reducing by-products such as smelter slag. For ash from the incineration of solid biomass, maximizing the use of biomass by setting proper temperature, time, and furnace conditions to reduce ash contents and improve the efficiency of power and heat generation. For ash, developing other renewable technologies from bioenergy to reduce the incineration of solid biomass, e.g., biogas.</li>
-<li>Reduce the generation of SLASH by increasing the proportion of higher calorific waste and decreasing lower calorific waste, e.g., MSW (Municipal Solid Waste).</li>
-<li>Developing domestic feedstock supply for bioenergy or metal production to reduce the cost of transportation and others.</li>
-<li>Higher formal collection and recycling rate compared to BAU, but lower compared to the Recovery scenario.</li>
 </ul>
 <h2 id="4-scenario-quantification">4. Scenario quantification</h2>
 <p><a href="#iii-table-of-contents">Back to: <strong>Table of Contents</strong></a></p>
 <p>To be completed in the next stages of the project.</p>
 <h2 id="5-references">5. References</h2>
 <p><a href="#iii-table-of-contents">Back to: <strong>Table of Contents</strong></a></p>
-<ul>
-<li>TO DO:
-<ul>
-<li>Add all references from the text.</li>
-<li>Find collate the references in the source documents into a bibliography</li>
-</ul>
-</li>
-</ul>
 <h2 id="6-appendices">6. Appendices</h2>
 <p><a href="#iii-table-of-contents">Back to: <strong>Table of Contents</strong></a></p>
 <h3 id="61-list-of-acronyms">6.1. List of acronyms</h3>
 <p><a href="#iii-table-of-contents">Back to: <strong>Table of Contents</strong></a></p>
-<ul>
-<li>TO DO:
-<ul>
-<li>Add all acronyms from the text.</li>
-<li>Move the less important from the front matter to the appendix</li>
-</ul>
-</li>
-</ul>
 <h3 id="62-list-of-terminology">6.2. List of terminology</h3>
 <p><a href="#iii-table-of-contents">Back to: <strong>Table of Contents</strong></a></p>
 <p>The following is a suggested terminology for use in our discussions and reports related to scenarios.</p>
-<p>This glossary is modelled on that used by Skea et. al. (2021), Outlooks, explorations and normative scenarios: Approaches to global energy futures compared. Some additional definitions were sourced from University of Arizona - Scenario Planning for Climate Adaption.</p>
+<p>This glossary is modelled on that used by Skea et. al. (2021), Outlooks, explorations and normative scenarios: Approaches to global energy futures compared (LINK). Some additional definitions were sourced from University of Arizona - Scenario Planning for Climate Adaption (UA).</p>
 <p>Alignment of a term to the right of the cell denotes some kind of subordination to the left aligned term directly above.</p>
 <h6 id="table-62-glossary-of-terms-used-in-the-futuram-scenario-development-process-">Table 6.2: Glossary of terms used in the FutuRaM scenario development process <!-- omit in toc --></h6>
 <table>
@@ -4139,7 +4062,7 @@ The following table lists the elements that were identified in this stage. The n
 <th>Term</th>
 <th>Meaning</th>
 <th>Context/Level</th>
-<th>A.K.A</th>
+<th>Sometimes referred to as (not necessarily implying complete synonymity)</th>
 <th>Source</th>
 </tr>
 </thead>
@@ -4346,22 +4269,99 @@ The following table lists the elements that were identified in this stage. The n
 <h3 id="63-methods-and-tools-considered-in-the-futuram-scenario-development-process">6.3. Methods and tools considered in the FutuRaM scenario development process</h3>
 <p>The following table provides an overview of the methods and tools considered, along with a brief description of each and its relevance to the specific context and objectives of the FutuRaM scenario development process.</p>
 <h6 id="table-63-methods-and-tools-considered-in-the-futuram-scenario-development-process-">Table 6.3: Methods and tools considered in the FutuRaM scenario development process <!-- omit in toc --></h6>
-<p>| Method         | Description                                                  | Key Characteristics                     | Limitations                        | Application                                               |
-|-------------------------------------|-------------------------------------------------------------|------------------------------------------------------------------------|------------------------------------------------|
-| Delphi                              | Structured expert consultation to gather and distil knowledge and judgments                          | - Iterative rounds of surveys/questionnaires<br>- Expert consensus building                          | - Time-consuming process<br>- May be influenced by dominant opinions or group dynamics                | - Policy development<br>- Technology foresight<br>- Long-term planning                           |
-| MCA                                 | Decision-support technique to evaluate and rank scenarios based on criteria                          | - Consideration of multiple dimensions in quantifying qualitative factors                            | - Policy assessment<br>- Project evaluation<br>- Strategic planning                                 |                                                                                                   |
-| Forecasting                         | Use of historical data and statistical methods to predict future trends                              | - Reliance on quantitative models<br>- Time series analysis                                          | - Assumption of future patterns based on past data<br>- Sensitivity to data quality and accuracy    | - Economic forecasting<br>- Demand/supply projections<br>- Financial planning                    |
-| Backcasting                         | Working backward from a desired future vision to identify necessary steps                            | - Focus on desired outcomes and future targets<br>- Identification of necessary actions              | - Uncertainty in future outcomes<br>- Difficulty in determining feasible pathways                 | - Sustainable development planning<br>- Policy design<br>- Long-term goal setting                |
-| Scenario Planning                   | Development of multiple future scenarios to understand the range of possibilities                    | - Identification of key drivers and uncertainties<br>- Narrative construction for each scenario       | - Subjectivity in scenario construction<br>- Lack of predictive accuracy                            | - Strategic management<br>- Risk assessment<br>- Policy analysis                                 |
-| Morphological Analysis              | Exploration of different combinations of variables/factors                                           | - Matrix-based exploration of variables and combinations                                             | - Complexity in analysing a large number of variables and combinations                              | - Technology assessment<br>- Innovation analysis<br>- System design                              |
-| Cross-Impact Analysis               | Analysis of interdependencies and interactions between variables/factors                              | - Identification of relationships and cross-impacts                                                  | - Assumptions about causal relationships<br>- Difficulty in capturing complex dynamics            | - Policy analysis<br>- Risk assessment<br>- System modelling                                     |
-| Morphological Box                   | Systematic exploration of the potential combinations of different components                          | - Identification of component options and combinations                                               | - Complexity in analysing a large number of components and combinations                               | - Technology assessment<br>- Innovation analysis<br>- Decision-making                            |
-| Gausemeier approach                 | Scenario development method involving the identification of future developments, evaluation of influencing factors, and determination of desired and undesired developments | - Systematic analysis of future developments and factors                                             | - Relies on expert judgment and subjective assessments                                                | - Strategic planning<br>- Innovation management                                                  |
-| Schwartz' 8-Step Scenario Model     | Scenario building model consisting of eight steps: identify the focal issue, determine the key forces, construct the scenario framework, identify driving forces, assess the uncertainties, develop the scenarios, analyze the scenarios, and monitor and adjust the scenarios | - Systematic progression through stages of scenario development                                 | - Requires detailed data and analysis                                                               | - Strategic planning<br>- Decision-making                                                        |
-| Schoemaker's 10-Step Scenario Model | Scenario building model consisting of ten steps: identify the focal issue, determine the scope, identify the key driving forces, develop the scenarios, define the scenario logic, assess the scenarios, refine the scenarios, examine implications, formulate actions, and communicate results | - Emphasis on thorough analysis and evaluation of scenarios                                     | - Can be time-consuming and resource-intensive                                                      | - Strategic planning<br>- Risk management                                                        |
-<br></p>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Description</th>
+<th>Key Characteristics</th>
+<th>Limitations</th>
+<th>Application</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Delphi</td>
+<td>Structured expert consultation to gather and distil knowledge and judgments</td>
+<td>- Iterative rounds of surveys/questionnaires<br>- Expert consensus building</td>
+<td>- Time-consuming process<br>- May be influenced by dominant opinions or group dynamics</td>
+<td>- Policy development<br>- Technology foresight<br>- Long-term planning</td>
+</tr>
+<tr>
+<td>MCA</td>
+<td>Decision-support technique to evaluate and rank scenarios based on criteria</td>
+<td>- Consideration of multiple dimensions<br>y in quantifying qualitative factors</td>
+<td>- Policy assessment<br>- Project evaluation<br>- Strategic planning</td>
+<td></td>
+</tr>
+<tr>
+<td>Forecasting</td>
+<td>Use of historical data and statistical methods to predict future trends</td>
+<td>- Reliance on quantitative models<br>- Time series analysis</td>
+<td>- Assumption of future patterns based on past data<br>- Sensitivity to data quality and accuracy</td>
+<td>- Economic forecasting<br>- Demand/supply projections<br>- Financial planning</td>
+</tr>
+<tr>
+<td>Backcasting</td>
+<td>Working backward from a desired future vision to identify necessary steps</td>
+<td>- Focus on desired outcomes and future targets<br>- Identification of necessary actions</td>
+<td>- Uncertainty in future outcomes<br>- Difficulty in determining feasible pathways</td>
+<td>- Sustainable development planning<br>- Policy design<br>- Long-term goal setting</td>
+</tr>
+<tr>
+<td>Scenario Planning</td>
+<td>Development of multiple future scenarios to understand the range of possibilities</td>
+<td>- Identification of key drivers and uncertainties<br>- Narrative construction for each scenario</td>
+<td>- Subjectivity in scenario construction<br>- Lack of predictive accuracy</td>
+<td>- Strategic management<br>- Risk assessment<br>- Policy analysis</td>
+</tr>
+<tr>
+<td>Morphological Analysis</td>
+<td>Exploration of different combinations of variables/factors</td>
+<td>- Matrix-based exploration of variables and combinations</td>
+<td>- Complexity in analysing a large number of variables and combinations</td>
+<td>- Technology assessment<br>- Innovation analysis<br>- System design</td>
+</tr>
+<tr>
+<td>Cross-Impact Analysis</td>
+<td>Analysis of interdependencies and interactions between variables/factors</td>
+<td>- Identification of relationships and cross-impacts</td>
+<td>- Assumptions about causal relationships<br>- Difficulty in capturing complex dynamics</td>
+<td>- Policy analysis<br>- Risk assessment<br>- System modelling</td>
+</tr>
+<tr>
+<td>Morphological Box</td>
+<td>Systematic exploration of the potential combinations of different components</td>
+<td>- Identification of component options and combinations</td>
+<td>- Complexity in analysing a large number of components and combinations</td>
+<td>- Technology assessment<br>- Innovation analysis<br>- Decision-making</td>
+</tr>
+<tr>
+<td>Gausemeier approach</td>
+<td>Scenario development method involving the identification of future developments, evaluation of influencing factors, and determination of desired and undesired developments</td>
+<td>- Systematic analysis of future developments and factors</td>
+<td>- Relies on expert judgment and subjective assessments</td>
+<td>- Strategic planning<br>- Innovation management</td>
+</tr>
+<tr>
+<td>Schwartz' 8-Step Scenario Model</td>
+<td>Scenario building model consisting of eight steps: identify the focal issue, determine the key forces, construct the scenario framework, identify driving forces, assess the uncertainties, develop the scenarios, analyze the scenarios, and monitor and adjust the scenarios</td>
+<td>- Systematic progression through stages of scenario development</td>
+<td>- Requires detailed data and analysis</td>
+<td>- Strategic planning<br>- Decision-making</td>
+</tr>
+<tr>
+<td>Schoemaker's 10-Step Scenario Model</td>
+<td>Scenario building model consisting of ten steps: identify the focal issue, determine the scope, identify the key driving forces, develop the scenarios, define the scenario logic, assess the scenarios, refine the scenarios, examine implications, formulate actions, and communicate results</td>
+<td>- Emphasis on thorough analysis and evaluation of scenarios</td>
+<td>- Can be time-consuming and resource-intensive</td>
+<td>- Strategic planning<br>- Risk management</td>
+</tr>
+</tbody>
+</table>
+<br>  
 <h3 id="64-list-of-sources-identified-in-the-process-of-marker-scenario-mapping">6.4. List of sources identified in the process of marker scenario mapping</h3>
-<p><a href="#23-step-3-marker-scenario-mapping">Back to: 2.3. Step 3: Marker scenario mapping</a><br>
+<p><a href="#23-step-3-marker-scenario-mapping">Back to: 2.3. Step 3: Marker scenario mapping</a>
 <a href="#iii-table-of-contents">Back to: <strong>Table of Contents</strong></a></p>
 <p>The following table presents an overview of the marker scenarios considered in the FutuRaM project. The table is not intended to be exhaustive, but rather to provide an overview of the different scenarios that have been developed in the field of waste management, resource recovery, and circular economy.</p>
 <h6 id="table-64-overview-of-marker-scenarios-">Table 6.4: Overview of marker scenarios <!-- omit in toc --></h6>

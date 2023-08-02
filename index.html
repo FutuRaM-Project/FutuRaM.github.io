@@ -1,18 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>FuTuRaM</title>
+    <title>FutuRaM</title>
     <link rel="icon" type="image/png" href="assets/img/FutuRaM_Favicon_RGB-JPG.jpg">
     <style>
       body {
-        background-color: #166e4e;
-        color: #ffffff;
-        margin: 0;
-        padding: 0;
         font-family: 'Cabin', sans-serif;
+        color: #000000;
       }
       header {
-        background-color: #005eb8;
+        background-image: url("assets/img/FutuRaM_Baseline_RGB-JPG.jpg");
         color: #ffffff;
         display: flex;
         justify-content: space-between;
@@ -28,30 +25,90 @@
         height: 50px;
         margin-right: 10px;
       }
-      iframe {
-        width: 100%;
-        height: calc(100vh - 100px);
-        border: none;
+      main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: calc(50vh - 100px);
+      }
+      h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      .ul_header {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        color: #ffffff;
+      }
+      li {
+        margin-bottom: 10px;
       }
       a {
-        color: #e9ecee;
+        color: #000000;
         text-decoration: none;
       }
       a:hover {
         text-decoration: underline;
       }
+      @media only screen and (max-width: 600px) {
+        header {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+        header img {
+          margin-bottom: 200px;
+        }
+        main {
+          height: auto;
+          padding: 20px;
+        }
+      }
     </style>
   </head>
   <body>
     <header>
-        <h1>FutuRaM --- Work Package 2 --- Future scenarios for SRM recovery --- Storyline report (draft)</h1>
-        <img src="assets/img/FutuRaM_Baseline_RGB-JPG.jpg" alt="Logo">
-
+        <h1>FutuRaM</h1>
+        <nav>
+          <ul class=ul_header>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
       </header>
-    <p><a href="FutuRaMa_WP2_scenarios_report.pdf" download>-    Download the .pdf of this draft report</a></p>
-    <p><a href="FutuRaMa_WP2_scenarios_report_DRAFT_commentsANDcorrections.docx" download>-    Download the .docx for making comments/corrections (send it back to s.c.mcdowall@leidenuniv.nl please) </a></p>
-    <p><a href="https://weeeforum.sharepoint.com/:f:/r/sites/futuram/Shared%20Documents/WP2%20-%20Foresight%20for%20Future%20Secondary%20Raw%20Materials/2.1_ScenarioDevelopment?csf=1&web=1&e=jlYmlS">-    Internal FutuRaM people can visit the WP2 folder on the sharepoint to find the report and the document for comments</a></p>
-    <p><a href="https://github.com/FutuRaM-Project/WP2/tree/main/2.1" download>-   If you know something of github and latex, please submit your corrections directly to the WP2 repo</a></p>
-    <iframe src="FutuRaMa_WP2_scenarios_report.pdf"></iframe>
-  </body>
-</html>
+      <main>
+        <h1>Welcome to FutuRaM</h1>
+        <p>This is a site built to host public content in a flexible way <br></br> 
+            If there is content that should be made available for engagement, it can be posted here</p>
+        <br>
+
+        <h2>List of publications and data</h2>
+        <h3>Work Packages</h3>
+        <ul>
+          <!-- <li><a href="#">Work Package 1</a></li> -->
+          <li><a href="/home/stew/code/gh/futuram/FutuRaM.github.io/WP2/WP2_scenarios.html">WP2 - storyline draft</a></li>
+          <!-- <li><a href="#">Work Package 3</a></li>
+          <li><a href="#">Work Package 4</a></li>
+          <li><a href="#">Work Package 5</a></li>
+          <li><a href="#">Work Package 6</a></li>
+          <li><a href="#">Work Package 7</a></li>
+          <li><a href="#">Work Package 8</a></li> -->
+        <!-- </ul>
+        <h2>Waste Streams</h2>
+        <ul>
+          <li><a href="#">BATT</a></li>
+          <li><a href="#">ELV</a></li>
+          <li><a href="#">WEEE</a></li>
+          <li><a href="#">CDW</a></li>
+          <li><a href="#">SLASH</a></li>
+          <li><a href="#">MIN</a></li>
+        </ul> -->
+      </main>

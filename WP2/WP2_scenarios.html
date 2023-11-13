@@ -1,75 +1,114 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>FuTuRaM</title>
-    <link rel="icon" type="image/png" href="assets/img/FutuRaM_Favicon_RGB-JPG.jpg">
-    <style>
-      body {
-        background-color: #24BAA0;
-        color: #000000;
-        margin: 0;
-        padding: 0;
-        font-family: 'Cabin', sans-serif;
-      }
-      header {
-        background-color: #003E74;
-        color: #ffffff;
+<head>
+  <title>FuTuRaM</title>
+  <link rel="icon" type="image/png" href="assets/img/FutuRaM_Favicon_RGB-JPG.jpg">
+  <style>
+    body {
+      background-color: #176b5dad;
+      color: #ebe7e7f3;
+      margin: 0;
+      padding: 0;
+      font-family: 'Cabin', sans-serif;
+      overflow-x: hidden;
+    }
+
+    header {
+      background-color: #003E74;
+      color: #d6d4d4;
+      text-align: center;
+      padding: 10px;
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      padding-bottom: 20px;
+    }
+
+    header img {
+      height: 70px;
+      margin-top: 10px;
+      margin-right: 40px;
+      margin-left: 20px;
+    }
+
+    .main-content {
+      display: flex;
+      justify-content: space-around;
+      margin: 10px;
+      padding: 20px;
+    }
+
+    .links {
+      width: 15%; /* Even narrower width */
+      overflow-y: auto;
+      background-color: #ebe7e72d;
+      padding: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      border-radius: 10px;
+      margin-right: 20px;
+      color: #000000;
+      height: fit-content; /* Increased height */
+      hover: #000000;
+    }
+
+    iframe {
+      flex-grow: 1;
+      height: 90vh; /* Increased height */
+      border: none;
+    }
+    .links a {
+      color: #050505d0;
+      text-decoration: none;
+    }
+    .links a:active {
+      color: #000000;
+    }
+    .links a:hover {
+      text-decoration: underline;
+    }
+    @media screen and (max-width: 768px) {
+      .main-content {
+        flex-direction: column;
         align-items: center;
-        padding: 10px;
-        text-align: center;
       }
-      header h1 {
-        margin: 0;
-        font-size: 24px;
-        font-weight: normal;
-        text-align: center;
-      }
-      header h1::before,
-      header h1::after {
-        content: "\2014";
-        margin: 0 10px;
-      }
-      header img {
-        height: 100px;
-        margin-right: 10px;
-        margin-bottom: 10px;
-      }
-      iframe {
+
+      .links, iframe {
         width: 100%;
-        height: calc(100vh - 0px);
-        border: none;
+        margin-bottom: 20px;
       }
-      a {
-        color: #e9ecee;
-        text-decoration: none;
+
+      iframe {
+        height: 60vh;
       }
-      a:hover {
-        text-decoration: underline;
-      }
-      .links {
-        text-align: center;
-        justify-content: center;
-      }
-      .links a {
-        color: #000000;
-      }
-      .links p {
-        margin: 0;
-        flex: 1;
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <img src="https://futuram.eu/wp-content/uploads/2022/11/rsz_1futuram_logo_white-png-1.png" alt="Logo">
-      <h1>Work Package 2</h1>
-      <h3>Future scenarios for SRM recovery — Storyline report (draft)</h3>
-    </header>
-    <div class="links">
-      <p><a href='WP2/assets.html'>View data and interactive figures here</a></p>
-      <p><a href="https://weeeforum.sharepoint.com/:f:/r/sites/futuram/Shared%20Documents/WP2%20-%20Foresight%20for%20Future%20Secondary%20Raw%20Materials/2.1_ScenarioDevelopment?csf=1&web=1&e=jlYmlS">FutuRaM members can find the shared comments file in the WP2 folder on the project sharepoint</a></p>
-      <p><a href='WP2.1_ScenarioStorylines_Review.xlsx'>For others, a blank template for comments is available here (please submit to s.c.mcdowall@cml.leidenuniv.nl)</a></p>
+    }
+
+    /* Transition lines under the header */
+    .transition-line {
+      height: 4px;
+      background: linear-gradient(to right, #176b5d, #003E74);
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+    <div class="transition-line"></div> <!-- Transition line -->
+  <header>
+    <img src="https://futuram.eu/wp-content/uploads/2022/11/rsz_1futuram_logo_white-png-1.png" alt="Logo">
+    <div>
+      <h2>Work Package 2 </h2><h2></h2>The future of secondary raw material recovery in the EU </h2>
     </div>
-    <iframe src="FutuRaMa_WP2_scenarios_report.pdf"></iframe>
-  </body>
+  </header>
+  <div class="transition-line"></div> <!-- Transition line -->
+  <div class="main-content">
+    <div class="links">
+      <p><a href='assets.html'>View additional data and interactive figures here</a></p>
+      <h3>Contributing</h3>
+      <p><a href="https://weeeforum.sharepoint.com/:f:/r/sites/futuram/Shared%20Documents/WP2%20-%20Foresight%20for%20Future%20Secondary%20Raw%20Materials/2.1_ScenarioDevelopment?csf=1&web=1&e=jlYmlS">FutuRaM members can find the shared comments file in the WP2 folder on the project sharepoint</a></p>
+      <p><a href='WP2.1_ScenarioStorylines_Review.xlsx'>For others, a blank template for comments is available to download, please return to <a href="mailto:s.c.mcdowall@cml.leidenuniv.nl">s.c.mcdowall@cml.leidenuniv.nl</a></a></p>
+    </div>
+    <iframe src="FutuRaMa_WP2_FutureScenarios_Report.pdf"></iframe>
+  </div>
+    <div class="transition-line"></div> <!-- Transition line -->
+
+</body>
 </html>

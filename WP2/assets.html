@@ -1,80 +1,121 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>FuTuRaM</title>
-    <link rel="icon" type="image/png" href="assets/img/FutuRaM_Favicon_RGB-JPG.jpg">
-    <style>
-      body {
-        background-color: #24BAA0;
-        color: #000000;
-        margin: 0;
-        padding: 0;
-        font-family: 'Cabin', sans-serif;
-      }
-      header {
-        background-color: #003E74;
-        color: #ffffff;
+<head>
+  <title>FuTuRaM</title>
+  <link rel="icon" type="image/png" href="assets/img/FutuRaM_Favicon_RGB-JPG.jpg">
+  <style>
+    body {
+      background-color: #176b5dad;
+      color: #ebe7e7f3;
+      margin: 0;
+      padding: 0;
+      font-family: 'Cabin', sans-serif;
+      overflow-x: hidden;
+    }
+
+    header {
+      background-color: #003E74;
+      color: #d6d4d4;
+      text-align: center;
+      padding: 10px;
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      padding-bottom: 20px;
+    }
+
+    header img {
+      height: 70px;
+      margin-top: 10px;
+      margin-right: 40px;
+      margin-left: 20px;
+    }
+
+    .main-content {
+      display: flex;
+      justify-content: space-around;
+      margin: 10px;
+      padding: 20px;
+    }
+
+    .links {
+      width: fit-content; /* Even narrower width */
+      overflow-y: auto;
+      background-color: #ebe7e72d;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      border-radius: 10px;
+      margin-right: 20px;
+      color: #000000;
+      height: fit-content; /* Increased height */
+    }
+
+    iframe {
+      flex-grow: 1;
+      height: 90vh; /* Increased height */
+      border: none;
+    }
+    .links a {
+      color: #050505d0;
+      text-decoration: none;
+    }
+    .links a:active {
+      color: #000000;
+    }
+    .links a:hover {
+      text-decoration: underline;
+    }
+    @media screen and (max-width: 768px) {
+      .main-content {
+        flex-direction: column;
         align-items: center;
-        padding: 10px;
-        text-align: center;
       }
-      header h1 {
-        margin: 0;
-        font-size: 24px;
-        font-weight: normal;
-        text-align: center;
-      }
-      header h1::before,
-      header h1::after {
-        content: "\2014";
-        margin: 0 10px;
-      }
-      header img {
-        height: 100px;
-        margin-right: 10px;
-        margin-bottom: 10px;
-      }
+
       iframe {
         width: 100%;
-        height: calc(100vh - 0px);
-        border: none;
+        margin-bottom: 20px;
       }
-      a {
-        color: #e9ecee;
-        text-decoration: none;
+
+      iframe {
+        height: 60vh;
       }
-      a:hover {
-        text-decoration: underline;
-      }
-      .links {
-        text-align: center;
-        justify-content: center;
-      }
-      .links a {
-        color: #000000;
-      }
-      .links p {
-        margin: 0;
-        flex: 1;
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <img src="https://futuram.eu/wp-content/uploads/2022/11/rsz_1futuram_logo_white-png-1.png" alt="Logo">
-      <h1>Work Package 2</h1>
-      <h3>Future scenarios for SRM recovery — Data and Visualisations</h3>
-    </header>
+    }
+
+    /* Transition lines under the header */
+    .transition-line {
+      height: 4px;
+      background: linear-gradient(to right, #176b5d, #003E74);
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+    <div class="transition-line"></div> <!-- Transition line -->
+  <header>
+    <img src="https://futuram.eu/wp-content/uploads/2022/11/rsz_1futuram_logo_white-png-1.png" alt="Logo">
+    <div>
+      <h2>Work Package 2 </h2><h2></h2>The future of secondary raw material recovery in the EU </h2>
+    </div>
+  </header>
+  <div class="transition-line"></div> <!-- Transition line -->
+  <div class="main-content">
     <div class="links">
-      <p><a href='assets-WP2/ce_indicators.html'>1. European Union Circular Economy Indicators</a></p>
+      <h2> Additional data and visualisations </h2>
+  <div class="transition-line"></div> <!-- Transition line -->
+<br>
+      <p><a href='assets-WP2/ce_indicators.html'>European Union Circular Economy Indicators</a></p>
       <br>
-      <p><a href='assets-WP2/population.html'>2. Population forecasts</a></p>
+      <p><a href='assets-WP2/population.html'>Population forecasts</a></p>
       <br>
-      <p><a href='assets-WP2/GDP.html'>3. GDP forecasts</a></p>
+      <p><a href='assets-WP2/gdp.html'>GDP forecasts</a></p>
       <br>
-      <p><a href='assets-WP2/energy.html'>4. Renewable energy transition forecasts</a></p>
+      <p><a href='assets-WP2/energy.html'>Renewable energy transition forecasts</a></p>
 
     </div>
     <!-- <iframe src='WP2/assets/ce_indicators.html'></iframe> -->
+    </div>
+    <footer>
+      <hr>
+    </footer>
   </body>
 </html>

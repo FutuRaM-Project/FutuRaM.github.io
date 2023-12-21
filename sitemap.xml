@@ -1,8 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
+		<loc>https://futuram-project.github.io/FutuRaM.github.io/WP2/WP2_scenarios.html</loc>
+		<priority>1.00</priority>
+		<lastmod>2023-12-20</lastmod>
+	</url>
+	<url>
 		<loc>https://futuram-project.github.io/FutuRaM.github.io</loc>
 		<priority>0.80</priority>
+		<lastmod>2023-12-21</lastmod>
+	</url>
+	<url>
+		<loc>https://futuram-project.github.io/FutuRaM.github.io/WP2/assets.html</loc>
+		<priority>0.40</priority>
 		<lastmod>2023-12-20</lastmod>
 	</url>
 	<url>
@@ -11,37 +21,7 @@
 		<lastmod>2023-12-20</lastmod>
 	</url>
 	<url>
-		<loc>https://futuram-project.github.io/FutuRaM.github.io/WP2/assets.html</loc>
-		<priority>0.40</priority>
-		<lastmod>2023-12-20</lastmod>
-	</url>
-	<url>
-		<loc>https://futuram-project.github.io/FutuRaM.github.io/WP2/WP2_scenarios.html</loc>
-		<priority>1.0</priority>
-		<lastmod>2023-12-20</lastmod>
-	</url>
-	<url>
-		<loc>https://futuram-project.github.io/FutuRaM.github.io/WP2/assets-WP2/population.html</loc>
-		<priority>0.20</priority>
-		<lastmod>2023-12-20</lastmod>
-	</url>
-	<url>
-		<loc>https://futuram-project.github.io/FutuRaM.github.io/WP2/assets-WP2/gdp.html</loc>
-		<priority>0.20</priority>
-		<lastmod>2023-12-20</lastmod>
-	</url>
-	<url>
-		<loc>https://futuram-project.github.io/FutuRaM.github.io/WP2/assets-WP2/energy_mix_forecast_bar.html</loc>
-		<priority>0.20</priority>
-		<lastmod>2023-12-20</lastmod>
-	</url>
-	<url>
-		<loc>https://futuram-project.github.io/FutuRaM.github.io/WP2/assets-WP2/energy_mix_forecast_Stated_Policies_Scenario.html</loc>
-		<priority>0.20</priority>
-		<lastmod>2023-12-20</lastmod>
-	</url>
-	<url>
-		<loc>https://futuram-project.github.io/FutuRaM.github.io/WP2/assets-WP2/energy_mix_forecast_Announced_Pledges_Scenario.html</loc>
+		<loc>https://futuram-project.github.io/FutuRaM.github.io/WP2/assets-WP2/ce_indicators.html</loc>
 		<priority>0.20</priority>
 		<lastmod>2023-12-20</lastmod>
 	</url>
@@ -51,7 +31,27 @@
 		<lastmod>2023-12-20</lastmod>
 	</url>
 	<url>
-		<loc>https://futuram-project.github.io/FutuRaM.github.io/WP2/assets-WP2/ce_indicators.html</loc>
+		<loc>https://futuram-project.github.io/FutuRaM.github.io/WP2/assets-WP2/energy_mix_forecast_Announced_Pledges_Scenario.html</loc>
+		<priority>0.20</priority>
+		<lastmod>2023-12-20</lastmod>
+	</url>
+	<url>
+		<loc>https://futuram-project.github.io/FutuRaM.github.io/WP2/assets-WP2/energy_mix_forecast_Stated_Policies_Scenario.html</loc>
+		<priority>0.20</priority>
+		<lastmod>2023-12-20</lastmod>
+	</url>
+	<url>
+		<loc>https://futuram-project.github.io/FutuRaM.github.io/WP2/assets-WP2/energy_mix_forecast_bar.html</loc>
+		<priority>0.20</priority>
+		<lastmod>2023-12-20</lastmod>
+	</url>
+	<url>
+		<loc>https://futuram-project.github.io/FutuRaM.github.io/WP2/assets-WP2/gdp.html</loc>
+		<priority>0.20</priority>
+		<lastmod>2023-12-20</lastmod>
+	</url>
+	<url>
+		<loc>https://futuram-project.github.io/FutuRaM.github.io/WP2/assets-WP2/population.html</loc>
 		<priority>0.20</priority>
 		<lastmod>2023-12-20</lastmod>
 	</url>
